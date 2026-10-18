@@ -1,0 +1,1100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DouFit_100 | Coaching Fitness</title>
+
+    <meta
+        name="description"
+        id="meta-description"
+        content="DouFit_100 propose du coaching fitness personnalisé pour la perte de gras, le gain musculaire, la préparation aux compétitions et le posing."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- STYLE DU BOUTON DE LANGUE -->
+    <style>
+        .language-switch {
+            display: flex;
+            align-items: center;
+        }
+
+        .language-switch button {
+            background: transparent;
+            color: white;
+            border: 1px solid #e50914;
+            border-radius: 6px;
+            padding: 9px 14px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .language-switch button:hover {
+            background: #e50914;
+            color: white;
+        }
+
+        .language-switch button:focus-visible {
+            outline: 2px solid white;
+            outline-offset: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                DOUFIT_<span>100</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home" data-i18n="navHome">Accueil</a>
+                <a href="#services" data-i18n="navServices">Services</a>
+                <a href="#coaching" data-i18n="navCoaching">Coaching</a>
+                <a href="#about" data-i18n="navAbout">À propos</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </div>
+
+            <a
+                href="#contact"
+                class="nav-btn"
+                data-i18n="navStart"
+            >
+                Commencer
+            </a>
+
+            <!-- BOUTON FR / EN -->
+            <div class="language-switch">
+                <button
+                    type="button"
+                    id="langBtn"
+                    onclick="changeLanguage()"
+                    aria-label="Switch to English"
+                >
+                    EN 🇨🇦
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small-text">
+                FITNESS • TRANSFORMATION • PERFORMANCE
+            </p>
+
+            <h1>
+                YOUR GOAL.
+                <br>
+                YOUR PLAN.
+                <br>
+                <span>YOUR TRANSFORMATION.</span>
+            </h1>
+
+            <p
+                class="hero-description"
+                data-i18n="heroDescription"
+            >
+                Un coaching personnalisé conçu autour de tes
+                objectifs, ton niveau et ton mode de vie.
+
+                Que ton objectif soit de perdre du gras,
+                gagner du muscle, préparer une compétition
+                ou améliorer ton posing, chaque programme
+                est adapté à toi.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#services"
+                    class="btn btn-primary"
+                    data-i18n="discoverServices"
+                >
+                    Découvrir les services
+                </a>
+
+                <a
+                    href="#contact"
+                    class="btn btn-secondary"
+                    data-i18n="startNow"
+                >
+                    Commencer maintenant
+                </a>
+
+            </div>
+        </div>
+
+        <div class="hero-side-text">
+            <p>DISCIPLINE</p>
+            <p>CONSISTENCY</p>
+            <p>PROGRESS</p>
+            <p>RESULTS</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section class="services" id="services">
+
+        <div class="section-header">
+
+            <p class="section-label" data-i18n="servicesLabel">
+                NOS SERVICES
+            </p>
+
+            <h2>
+                <span data-i18n="servicesTitle1">CHOISIS TON</span>
+                <span data-i18n="servicesTitle2">OBJECTIF.</span>
+            </h2>
+
+            <p data-i18n="servicesDescription">
+                Chaque programme DouFit_100 est conçu
+                pour répondre à un objectif spécifique
+                tout en s'adaptant à ton niveau,
+                ton expérience et ton mode de vie.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <!-- FAT LOSS -->
+
+            <div class="service-card fat-loss">
+
+                <span class="service-number">01</span>
+
+                <h3>FAT LOSS</h3>
+
+                <p data-i18n="fatLossDescription">
+                    Un programme personnalisé pour perdre
+                    du gras, améliorer ta condition physique
+                    et développer des habitudes durables.
+                </p>
+
+                <a
+                    href="fat-loss.html"
+                    data-i18n="discoverService"
+                >
+                    Découvrir le service →
+                </a>
+
+            </div>
+
+
+            <!-- MUSCLE GAIN -->
+
+            <div class="service-card muscle-gain">
+
+                <span class="service-number">02</span>
+
+                <h3>MUSCLE GAIN</h3>
+
+                <p data-i18n="muscleGainDescription">
+                    Développe ta masse musculaire,
+                    améliore ta force et progresse
+                    avec une stratégie adaptée
+                    à ton objectif.
+                </p>
+
+                <a
+                    href="muscle-gain.html"
+                    data-i18n="discoverService"
+                >
+                    Découvrir le service →
+                </a>
+
+            </div>
+
+
+            <!-- COMPETITION PREP -->
+
+            <div class="service-card competition-prep">
+
+                <span class="service-number">03</span>
+
+                <h3>COMPETITION PREP</h3>
+
+                <p data-i18n="competitionDescription">
+                    Une préparation structurée et personnalisée
+                    pour t'aider à arriver sur scène
+                    dans ta meilleure condition.
+                </p>
+
+                <a
+                    href="competition-prep.html"
+                    data-i18n="discoverService"
+                >
+                    Découvrir le service →
+                </a>
+
+            </div>
+
+
+            <!-- POSING -->
+
+            <div class="service-card posing">
+
+                <span class="service-number">04</span>
+
+                <h3>POSING</h3>
+
+                <p data-i18n="posingDescription">
+                    Améliore tes poses, tes transitions,
+                    ta routine et ta présence afin
+                    de présenter ton physique avec confiance.
+                </p>
+
+                <a
+                    href="posing.html"
+                    data-i18n="discoverService"
+                >
+                    Découvrir le service →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= COACHING ================= -->
+
+    <section class="coaching" id="coaching">
+
+        <div class="coaching-content">
+
+            <p
+                class="section-label"
+                data-i18n="coachingLabel"
+            >
+                COACHING PERSONNALISÉ
+            </p>
+
+            <h2>
+                <span data-i18n="coachingTitle1">
+                    UN PLAN CONSTRUIT
+                </span>
+                <span data-i18n="coachingTitle2">
+                    POUR TOI.
+                </span>
+            </h2>
+
+            <p data-i18n="coachingDescription">
+                Il n'existe pas un programme unique
+                qui fonctionne pour tout le monde.
+
+                Ton entraînement, ta nutrition, ton cardio
+                et tes ajustements sont organisés selon
+                tes objectifs, ton niveau et ta progression.
+            </p>
+
+            <div class="coaching-features">
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p data-i18n="feature1">
+                        Programme d'entraînement personnalisé
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p data-i18n="feature2">
+                        Plan nutritionnel adapté à ton objectif
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p data-i18n="feature3">
+                        Stratégie cardio personnalisée
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p data-i18n="feature4">
+                        Suivi de progression
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p data-i18n="feature5">
+                        Ajustements selon tes résultats
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <span>✓</span>
+                    <p data-i18n="feature6">
+                        Coaching en ligne et en personne
+                    </p>
+                </div>
+
+            </div>
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+                data-i18n="startCoaching"
+            >
+                Commencer mon coaching
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <div class="about-text">
+
+                <p class="section-label">
+                    DOUFIT_100
+                </p>
+
+                <h2>
+                    <span data-i18n="aboutTitle1">
+                        PLUS QU'UN
+                    </span>
+                    <span data-i18n="aboutTitle2">
+                        PROGRAMME.
+                    </span>
+                </h2>
+
+                <p data-i18n="aboutDescription1">
+                    DouFit_100 est basé sur une approche
+                    personnalisée du fitness.
+
+                    L'objectif n'est pas simplement
+                    de te donner un programme,
+                    mais de construire une stratégie
+                    adaptée à toi et de t'accompagner
+                    dans ta progression.
+                </p>
+
+                <p data-i18n="aboutDescription2">
+                    Chaque personne a un niveau,
+                    un emploi du temps, un métabolisme
+                    et des objectifs différents.
+
+                    C'est pourquoi chaque plan est ajusté
+                    selon les besoins individuels.
+                </p>
+
+                <p class="about-highlight">
+                    Better habits. Bigger results.
+                </p>
+
+            </div>
+
+            <div class="about-stats">
+
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p data-i18n="statPersonalized">
+                        Personnalisé
+                    </p>
+                </div>
+
+                <div class="stat">
+                    <h3>4</h3>
+                    <p data-i18n="statServices">
+                        Services principaux
+                    </p>
+                </div>
+
+                <div class="stat">
+                    <h3>1</h3>
+                    <p data-i18n="statGoal">
+                        Objectif : progresser
+                    </p>
+                </div>
+
+                <div class="stat">
+                    <h3>∞</h3>
+                    <p data-i18n="statPotential">
+                        Potentiel
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div class="cta-content">
+
+            <p>READY TO LEVEL UP?</p>
+
+            <h2>
+                <span data-i18n="ctaTitle1">
+                    COMMENCE TA
+                </span>
+                <span data-i18n="ctaTitle2">
+                    TRANSFORMATION.
+                </span>
+            </h2>
+
+            <a
+                href="#contact"
+                class="btn btn-primary"
+                data-i18n="startNow"
+            >
+                Commencer maintenant
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-header">
+
+            <p class="section-label">CONTACT</p>
+
+            <h2>
+                <span data-i18n="contactTitle1">
+                    PARLONS DE TON
+                </span>
+                <span data-i18n="contactTitle2">
+                    OBJECTIF.
+                </span>
+            </h2>
+
+            <p data-i18n="contactDescription">
+                Prêt à commencer ?
+
+                Contacte DouFit_100 pour discuter
+                de ton objectif et déterminer
+                le type de coaching qui te convient.
+            </p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <!-- CONTACT INFORMATION -->
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <h3>Instagram</h3>
+
+                    <a
+                        href="https://www.instagram.com/doufit_100/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        @doufit_100
+                    </a>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3 data-i18n="phone">Téléphone</h3>
+
+                    <a href="tel:+15063806589">
+                        (506) 380-6589
+                    </a>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <h3>Email</h3>
+
+                    <a href="mailto:doufit100@gmail.com">
+                        doufit100@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULAIRE FORMSPREE -->
+
+            <form
+                class="contact-form"
+                id="contact-form"
+                action="https://formspree.io/f/mppwzgrb"
+                method="POST"
+            >
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="name" data-i18n="formName">
+                        Nom
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="Nom"
+                        placeholder="Ton nom"
+                        data-i18n-placeholder="namePlaceholder"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="tonemail@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- SERVICE -->
+
+                <div class="form-group">
+
+                    <label for="goal" data-i18n="formService">
+                        Service qui t'intéresse
+                    </label>
+
+                    <select
+                        id="goal"
+                        name="Service"
+                        required
+                    >
+
+                        <option
+                            value=""
+                            data-i18n="formSelect"
+                        >
+                            Sélectionne ton objectif
+                        </option>
+
+                        <option value="fat-loss">
+                            Fat Loss
+                        </option>
+
+                        <option value="muscle-gain">
+                            Muscle Gain
+                        </option>
+
+                        <option value="competition-prep">
+                            Competition Prep
+                        </option>
+
+                        <option value="posing">
+                            Posing
+                        </option>
+
+                        <option
+                            value="other"
+                            data-i18n="formOther"
+                        >
+                            Autre
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="Message"
+                        rows="6"
+                        placeholder="Parle-moi de ton objectif..."
+                        data-i18n-placeholder="messagePlaceholder"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    data-i18n="formSubmit"
+                >
+                    Envoyer
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    DOUFIT_<span>100</span>
+                </a>
+
+                <p>
+                    FITNESS • TRANSFORMATION • PERFORMANCE
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home" data-i18n="navHome">
+                    Accueil
+                </a>
+
+                <a href="#services" data-i18n="navServices">
+                    Services
+                </a>
+
+                <a href="#coaching" data-i18n="navCoaching">
+                    Coaching
+                </a>
+
+                <a href="#about" data-i18n="navAbout">
+                    À propos
+                </a>
+
+                <a href="#contact" data-i18n="navContact">
+                    Contact
+                </a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a
+                    href="https://www.instagram.com/doufit_100/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p data-i18n="copyright">
+                © 2026 DouFit_100. Tous droits réservés.
+            </p>
+
+            <p data-i18n="footerMotto">
+                Discipline • Progrès • Résultats
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT EXISTANT ================= -->
+
+    <script src="script.js"></script>
+
+
+    <!-- ================= TRADUCTION FR / EN ================= -->
+
+    <script>
+
+        const translations = {
+
+            // ================= FRANÇAIS =================
+
+            fr: {
+
+                metaDescription:
+                    "DouFit_100 propose du coaching fitness personnalisé pour la perte de gras, le gain musculaire, la préparation aux compétitions et le posing.",
+
+                navHome: "Accueil",
+                navServices: "Services",
+                navCoaching: "Coaching",
+                navAbout: "À propos",
+                navContact: "Contact",
+                navStart: "Commencer",
+
+                heroDescription:
+                    "Un coaching personnalisé conçu autour de tes objectifs, ton niveau et ton mode de vie. Que ton objectif soit de perdre du gras, gagner du muscle, préparer une compétition ou améliorer ton posing, chaque programme est adapté à toi.",
+
+                discoverServices: "Découvrir les services",
+                startNow: "Commencer maintenant",
+
+                servicesLabel: "NOS SERVICES",
+                servicesTitle1: "CHOISIS TON",
+                servicesTitle2: "OBJECTIF.",
+
+                servicesDescription:
+                    "Chaque programme DouFit_100 est conçu pour répondre à un objectif spécifique tout en s'adaptant à ton niveau, ton expérience et ton mode de vie.",
+
+                fatLossDescription:
+                    "Un programme personnalisé pour perdre du gras, améliorer ta condition physique et développer des habitudes durables.",
+
+                muscleGainDescription:
+                    "Développe ta masse musculaire, améliore ta force et progresse avec une stratégie adaptée à ton objectif.",
+
+                competitionDescription:
+                    "Une préparation structurée et personnalisée pour t'aider à arriver sur scène dans ta meilleure condition.",
+
+                posingDescription:
+                    "Améliore tes poses, tes transitions, ta routine et ta présence afin de présenter ton physique avec confiance.",
+
+                discoverService: "Découvrir le service →",
+
+                coachingLabel: "COACHING PERSONNALISÉ",
+                coachingTitle1: "UN PLAN CONSTRUIT",
+                coachingTitle2: "POUR TOI.",
+
+                coachingDescription:
+                    "Il n'existe pas un programme unique qui fonctionne pour tout le monde. Ton entraînement, ta nutrition, ton cardio et tes ajustements sont organisés selon tes objectifs, ton niveau et ta progression.",
+
+                feature1: "Programme d'entraînement personnalisé",
+                feature2: "Plan nutritionnel adapté à ton objectif",
+                feature3: "Stratégie cardio personnalisée",
+                feature4: "Suivi de progression",
+                feature5: "Ajustements selon tes résultats",
+                feature6: "Coaching en ligne et en personne",
+
+                startCoaching: "Commencer mon coaching",
+
+                aboutTitle1: "PLUS QU'UN",
+                aboutTitle2: "PROGRAMME.",
+
+                aboutDescription1:
+                    "DouFit_100 est basé sur une approche personnalisée du fitness. L'objectif n'est pas simplement de te donner un programme, mais de construire une stratégie adaptée à toi et de t'accompagner dans ta progression.",
+
+                aboutDescription2:
+                    "Chaque personne a un niveau, un emploi du temps, un métabolisme et des objectifs différents. C'est pourquoi chaque plan est ajusté selon les besoins individuels.",
+
+                statPersonalized: "Personnalisé",
+                statServices: "Services principaux",
+                statGoal: "Objectif : progresser",
+                statPotential: "Potentiel",
+
+                ctaTitle1: "COMMENCE TA",
+                ctaTitle2: "TRANSFORMATION.",
+
+                contactTitle1: "PARLONS DE TON",
+                contactTitle2: "OBJECTIF.",
+
+                contactDescription:
+                    "Prêt à commencer ? Contacte DouFit_100 pour discuter de ton objectif et déterminer le type de coaching qui te convient.",
+
+                phone: "Téléphone",
+
+                formName: "Nom",
+                namePlaceholder: "Ton nom",
+
+                formService: "Service qui t'intéresse",
+                formSelect: "Sélectionne ton objectif",
+                formOther: "Autre",
+
+                messagePlaceholder: "Parle-moi de ton objectif...",
+                formSubmit: "Envoyer",
+
+                copyright: "© 2026 DouFit_100. Tous droits réservés.",
+                footerMotto: "Discipline • Progrès • Résultats"
+            },
+
+
+            // ================= ENGLISH =================
+
+            en: {
+
+                metaDescription:
+                    "DouFit_100 offers personalized fitness coaching for fat loss, muscle gain, competition preparation, and posing.",
+
+                navHome: "Home",
+                navServices: "Services",
+                navCoaching: "Coaching",
+                navAbout: "About",
+                navContact: "Contact",
+                navStart: "Get Started",
+
+                heroDescription:
+                    "Personalized coaching designed around your goals, fitness level, and lifestyle. Whether you want to lose fat, build muscle, prepare for a competition, or improve your posing, every program is tailored specifically to you.",
+
+                discoverServices: "Explore Our Services",
+                startNow: "Get Started Now",
+
+                servicesLabel: "OUR SERVICES",
+                servicesTitle1: "CHOOSE YOUR",
+                servicesTitle2: "GOAL.",
+
+                servicesDescription:
+                    "Every DouFit_100 program is designed to help you achieve a specific goal while adapting to your fitness level, experience, and lifestyle.",
+
+                fatLossDescription:
+                    "A personalized program designed to help you lose body fat, improve your fitness, and build sustainable habits.",
+
+                muscleGainDescription:
+                    "Build muscle, increase your strength, and make consistent progress with a strategy tailored to your goals.",
+
+                competitionDescription:
+                    "A structured and personalized preparation program designed to help you step on stage in your best condition.",
+
+                posingDescription:
+                    "Improve your poses, transitions, routine, and stage presence so you can present your physique with confidence.",
+
+                discoverService: "Explore This Service →",
+
+                coachingLabel: "PERSONALIZED COACHING",
+                coachingTitle1: "A PLAN BUILT",
+                coachingTitle2: "FOR YOU.",
+
+                coachingDescription:
+                    "There is no one-size-fits-all fitness program. Your training, nutrition, cardio, and adjustments are organized around your goals, fitness level, and progress.",
+
+                feature1: "Personalized Workout Program",
+                feature2: "Nutrition Plan Tailored to Your Goals",
+                feature3: "Personalized Cardio Strategy",
+                feature4: "Progress Tracking",
+                feature5: "Adjustments Based on Your Results",
+                feature6: "Online and In-Person Coaching",
+
+                startCoaching: "Start My Coaching",
+
+                aboutTitle1: "MORE THAN",
+                aboutTitle2: "A PROGRAM.",
+
+                aboutDescription1:
+                    "DouFit_100 is built around a personalized approach to fitness. The goal is not simply to give you a workout plan, but to build a strategy tailored to your needs and guide you throughout your fitness journey.",
+
+                aboutDescription2:
+                    "Everyone has a different fitness level, schedule, metabolism, and goals. That is why every plan is adjusted to meet individual needs.",
+
+                statPersonalized: "Personalized",
+                statServices: "Main Services",
+                statGoal: "Goal: Keep Improving",
+                statPotential: "Potential",
+
+                ctaTitle1: "START YOUR",
+                ctaTitle2: "TRANSFORMATION.",
+
+                contactTitle1: "LET'S TALK ABOUT",
+                contactTitle2: "YOUR GOALS.",
+
+                contactDescription:
+                    "Ready to get started? Contact DouFit_100 to discuss your goals and find the coaching program that works best for you.",
+
+                phone: "Phone",
+
+                formName: "Name",
+                namePlaceholder: "Your name",
+
+                formService: "Service You're Interested In",
+                formSelect: "Select Your Goal",
+                formOther: "Other",
+
+                messagePlaceholder: "Tell me about your goals...",
+                formSubmit: "Send Message",
+
+                copyright: "© 2026 DouFit_100. All rights reserved.",
+                footerMotto: "Discipline • Progress • Results"
+            }
+
+        };
+
+
+        // ================= LANGUAGE MANAGEMENT =================
+
+        const storageKey = "doufitLanguage";
+
+        function getSavedLanguage() {
+
+            try {
+                const saved = localStorage.getItem(storageKey);
+
+                return saved === "en" ? "en" : "fr";
+
+            } catch (error) {
+                return "fr";
+            }
+        }
+
+        let currentLanguage = getSavedLanguage();
+
+
+        // ================= APPLY TRANSLATIONS =================
+
+        function applyLanguage() {
+
+            const dictionary = translations[currentLanguage];
+
+            // Translate all visible text elements
+            document.querySelectorAll("[data-i18n]").forEach(element => {
+
+                const key = element.getAttribute("data-i18n");
+
+                if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                    element.textContent = dictionary[key];
+                }
+
+            });
+
+
+            // Translate input and textarea placeholders
+            document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
+
+                const key = element.getAttribute("data-i18n-placeholder");
+
+                if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+                    element.placeholder = dictionary[key];
+                }
+
+            });
+
+
+            // Update HTML language
+            document.documentElement.lang = currentLanguage;
+
+
+            // Update page title and description
+            document.title = currentLanguage === "fr"
+                ? "DouFit_100 | Coaching Fitness"
+                : "DouFit_100 | Fitness Coaching";
+
+            const metaDescription = document.getElementById("meta-description");
+
+            if (metaDescription) {
+                metaDescription.setAttribute(
+                    "content",
+                    dictionary.metaDescription
+                );
+            }
+
+
+            // Update language button
+            const languageButton = document.getElementById("langBtn");
+
+            if (languageButton) {
+
+                if (currentLanguage === "fr") {
+
+                    languageButton.textContent = "EN 🇨🇦";
+                    languageButton.setAttribute(
+                        "aria-label",
+                        "Switch to English"
+                    );
+
+                } else {
+
+                    languageButton.textContent = "FR 🇫🇷";
+                    languageButton.setAttribute(
+                        "aria-label",
+                        "Passer en français"
+                    );
+
+                }
+
+            }
+
+        }
+
+
+        // ================= SWITCH LANGUAGE =================
+
+        function changeLanguage() {
+
+            currentLanguage = currentLanguage === "fr" ? "en" : "fr";
+
+            try {
+
+                localStorage.setItem(
+                    storageKey,
+                    currentLanguage
+                );
+
+            } catch (error) {
+                // Translation still works without storage
+            }
+
+            applyLanguage();
+
+        }
+
+
+        // ================= INITIALIZATION =================
+
+        if (document.readyState === "loading") {
+
+            document.addEventListener(
+                "DOMContentLoaded",
+                applyLanguage
+            );
+
+        } else {
+
+            applyLanguage();
+
+        }
+
+    </script>
+
+</body>
+</html>
